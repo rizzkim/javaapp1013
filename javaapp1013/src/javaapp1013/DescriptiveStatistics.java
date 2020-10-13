@@ -15,13 +15,15 @@ public class DescriptiveStatistics {
 		int sum = 0;
 		int cnt = 0;
 		
-		for (int a=0; a<=nums.length; a=a+1) {
+		for (int a=0; a<nums.length; a=a+1) {
 			if (nums[a]>50) {
 				sum=sum+nums[a];
 				cnt=cnt+1;
+				
+				
 			}
+			
 		}
-		
 		System.out.printf("50점이 넘은 수의 합계 : %d\n", sum);
 		System.out.printf("50이 넘는 개수 : %d\n", cnt);
 		
@@ -29,7 +31,7 @@ public class DescriptiveStatistics {
 			System.out.println("조건에 맞는 데이터가 없습니다.");
 		} else {
 			double avg = (double)sum/cnt;
-			System.out.printf("평균 : %.1f", avg);
+			System.out.printf("평균 : %.1f\n", avg);
 		}
 		
 		//최대값과 최소값 구하기
